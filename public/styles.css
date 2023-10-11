@@ -1,0 +1,15 @@
+/* ============     SELECTOR CSS    ========================= */
+body {
+  background-color: rgb(243, 251, 193);
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  color: rgb(212, 210, 210);
+}
+h3{
+    color: blue;
+}
