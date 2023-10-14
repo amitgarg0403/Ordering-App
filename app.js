@@ -1,8 +1,10 @@
 // Requiring Modules and Packages
 const express = require("express")
 const mongoose = require("mongoose")
+const products = require("./products")
 
 // const bodyParser = require
+
 
 
 // creating instance of express
@@ -20,13 +22,39 @@ app.use(express.static("public"));
 // .then(()=>{console.log("Connect to MongoDB")})
 // .catch((err)=>{console.log(err);})
 
+
+// Global Variable
+let cart = []
+
+
 // Home get request
 app.get("/", (req,res)=>{
     res.render("home")
 })
 
 
+// Product get request
+app.get("/products", (req,res)=>{
+    
+res.render("products", { Products : products })
+})
+
+// Product Post request
+app.post("/products", (req, res)=>{
+    console.log("Hello");
+    q = req.body.name;
+    console.log(q)
+})
+
+// cart get request
+
+app.get("/cart", (req,res)=>{
+res.render("cart")
+})
+
+
+
 // Listening Server
 app.listen(5000, ()=>{
-    console.log("Server started on Port: 3000");
+    console.log("Server started on Port: 5000");
 })

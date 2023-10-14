@@ -1,6 +1,6 @@
 /* ============     SELECTOR CSS    ========================= */
 body {
-  background-color: rgb(243, 251, 193);
+  background-color: rgb(224, 241, 112);
 }
 
 h1 {
@@ -8,8 +8,112 @@ h1 {
 }
 
 p {
+  font-size: 1.5rem;
   color: rgb(212, 210, 210);
 }
 h3{
     color: blue;
+}
+
+
+
+
+
+/*==================== NAV BAR CSS ====================*/
+
+
+
+/*==================== HOME PAGE CSS ====================*/
+
+.front-container {
+  position: relative;
+
+  height: 200px;
+}
+
+.front-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 200px;
+  left: 425px;
+}
+
+.content,
+p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* ====================================   PRODUCT TEMPLATE CSS    ======================================== */
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(240, 247, 179);
+}
+
+
+
+.product-card{
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 35%;
+    align-items:center;
+    display: flex;
+   
+}
+
+.product-img {
+  padding: 10px;
+    height: 250px;
+    width: 200px;
+
+}
+
+.product-img img{
+    max-width: 100%;
+}
+
+.btn-product {
+  
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  padding: 10px auto;
+  margin: 25px auto 20px;
+  height: 30px;
+  width: 100px;
+}
+
+div p {
+  font-weight: 500;
+  font-size:medium;
+  line-height: 10px;
+  color: rgb(0, 0, 0);
+}
+
+
+/* =========================    CART CSS      ============================== */
+.cart-table{
+  position: relative;
+  top: 150px;
+  left: 500px;
+  border: 2;
+  text-align: center;
+  border-color: rgb(0, 0, 0);
+
+}
+
+.table-row{
+  align-items: center;
+  border-color: rgb(0, 0, 0);
+  border-top: 1px;
+font-size: larger;
 }
