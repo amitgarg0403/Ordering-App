@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<%- include('partials/navbar') %>
+
+    <form class="form-signin" method="post" action="/signin">
+        
+        <h1 class="h3 mb-3 font-weight-normal" >Log-In</h1>
+        <%= Message %>
+
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" name="myEmail" class="form-control" placeholder="Email"  autofocus>
+        
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="myPassword" class="form-control" placeholder="Password" >
+        
+        
+        <button class="btn btn-lg btn-success btn-block" type="submit" >Sign in</button>
+        <a href="/signup">Don't have Account, Click here</a>
+        <br>
+        <p class="mt-5 mb-3 text-muted">&copy; 2023 Amit</p>
+      </form>
+    
+   
+
+<%- include('partials/footer') %>
+

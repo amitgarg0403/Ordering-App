@@ -4,12 +4,15 @@ body {
 }
 
 h1 {
+  text-align: center;
   color: red;
 }
 
 p {
-  font-size: 1.5rem;
-  color: rgb(212, 210, 210);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(32, 32, 26);
+  text-align: center;
 }
 h3{
     color: blue;
@@ -33,23 +36,18 @@ h3{
 
 .front-img {
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: space;
   background-size: cover;
-  height: 90vh;
+  max-height: 90vh;
   width: 100%;
 }
 
 .content {
   position: absolute;
   top: 200px;
-  left: 425px;
+  left: 325px;
 }
 
-.content,
-p {
-  color: white;
-  font-size: 1.5rem;
-}
 
 /* ====================================   PRODUCT TEMPLATE CSS    ======================================== */
 
@@ -99,13 +97,17 @@ div p {
   color: rgb(0, 0, 0);
 }
 
+button:focus{
+  color: red;
+}
 
 /* =========================    CART CSS      ============================== */
+/* i will reformat this table once project complete */
 .cart-table{
   position: relative;
   top: 150px;
   left: 500px;
-  border: 2;
+  border: 0;
   text-align: center;
   border-color: rgb(0, 0, 0);
 
@@ -113,7 +115,53 @@ div p {
 
 .table-row{
   align-items: center;
-  border-color: rgb(0, 0, 0);
-  border-top: 1px;
-font-size: larger;
+  font-size: larger;
+}
+
+th,td{
+  /* border: 0; */
+  border: 2;
+  border-color: black;
+}
+
+.btn-cart{
+  background-color: lightgreen;
+  border-radius: 8px;
+  border: darkgreen 2px solid;
+}
+
+/* =====================   LOGIN CSS     ======================= */
+
+
+
+
+/* ===================   SIGN IN PAGE CSS ===================== */
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }

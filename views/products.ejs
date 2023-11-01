@@ -3,21 +3,21 @@
 <!-- product items -->
 
 <section class="product">
-    <% Products.forEach(product => { %>
-    <div class="product-card">
-        <div class="product-img"><img src="<%" ="product.img%" /> alt=""></div>
-        <div class="product-info">
-          <form action="/products" method="post">
 
-              <h3><%= product.name %></h3>
-              <p><%= product.Description %></p>
-              <button name="add2cart" value="<%= product.id %>">Add</button>
+  <% pageProducts.forEach(product => { %>
 
-          </form>
-
-        </div>
-      </div>
-    <% }); %>
+  <div class="product-card">
+    <div class="product-img">
+      <img src="<%=product.img%>" alt="" />
+    </div>
+    <div class="product-info">
+      <h3><%= product.name %></h3>
+      <p><%= product.Description %></p>
+      <p>Rs. <%= product.price %></p>
+        <a href="/products/<%= product.id %>"><button class="btn-product">Add to Cart</button></a>
+    </div>
+  </div>
+  <% }); %>
 </section>
 
 <%- include('partials/footer') %>
